@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type = "module" src="script.js"></script>
+    <script type = "module" src="storage.js"></script>
+    <script type = "module" src="render.js"></script>
+    <link
+      rel="stylesheet"
+      href="style.css"
+      type="text/css"
+      media="all"
+    />
+</head>
+<body>
+<h1>todos</h1>
+<div class="box boxHide"> 
+    <div class="inputDiv">
+        <label class="check">
+            ⌄
+        <input type="checkbox" id="selectAll">
+        </label>
+        <input type="text" id="enterTodo" placeholder="What needs to be done?">
+        <label for="enterTodo"></label>
+    </div>
+    <div class="listOfTodos">
+
+    </div>
+    <footer class="removeFooter">
+        <span class="totalTodos"></span>
+        <div class="todoType">
+            <button class="filters highlight" id="all">All</button>
+            <button class="filters" id="active">Active</button>
+            <button class="filters" id="completed">Completed</button>
+        </div>
+        <button class="clearAll" id = "clearCompleted">Clear Completed</button>
+    </footer>
+</div>
+    
+    
+</body>
+</html>
